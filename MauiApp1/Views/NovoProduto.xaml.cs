@@ -21,11 +21,11 @@ public partial class NovoProduto : ContentPage
 			};
 
 			await App.Db.Insert(p);
-			await DisplayAlertAsync("Sucesso", "Registro Inserido", "ok");
+			await DisplayAlert("Sucesso", "Registro Inserido", "ok");
 		}
 		catch(Exception ex)
 		{
-		await DisplayAlertAsync("ops",  ex.Message, "OK");
+		await DisplayAlert("ops",  ex.Message, "OK");
 		}
 
 
